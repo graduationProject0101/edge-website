@@ -1,0 +1,705 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Wavehaus, serif;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+/* ------------------------------------------ NavBar ----------------------------------------------------- */
+
+#admin-navbar {
+  height: 80px;
+  background-color: black !important;
+  color: white !important;
+  position:relative;
+  z-index:100;
+}
+
+.admin-navtext {
+  color: white !important;
+}
+
+#navbar {
+  height: 80px;
+  background-color: white!important;
+  position:relative;
+  z-index:100;
+}
+
+.navText {
+  margin-left: 130px;
+}
+
+#cart-items-number {
+  color: white;
+  background-color: black;
+  height: 20px;
+  width: 20px;
+  padding: 5px;
+  border-radius: 5rem;
+  -webkit-border-radius: 5rem;
+  -moz-border-radius: 5rem;
+  -ms-border-radius: 5rem;
+  -o-border-radius: 5rem;
+  font-size: 10px;
+  margin-top: -30px;
+  margin-left: 20px;
+}
+
+#form-block {
+  background-color: white;
+  width: 100%;
+  /* border-radius: 5rem;
+  -webkit-border-radius: 5rem;
+  -moz-border-radius: 5rem;
+  -ms-border-radius: 5rem;
+  -o-border-radius: 5rem; */
+  /* padding: 10px 20px; */
+  /* transition: width 0.5s ease-in-out;
+  -webkit-transition: width 0.5s ease-in-out;
+  -moz-transition: width 0.5s ease-in-out;
+  -ms-transition: width 0.5s ease-in-out;
+  -o-transition: width 0.5s ease-in-out; */
+  /* box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.4); */
+}
+
+/* #form-block:hover {
+  width: 20%;
+} */
+
+/* #form-block:hover > #search-bar {
+  display: inline-block;
+  width: 80%;
+  cursor: pointer;
+} */
+
+/* .seach-bar-after {
+  display: inline-block;
+  width: 80%;
+  cursor: pointer;
+} */
+
+#search-bar {
+  background: transparent;
+  display: block;
+  /* border: 1px solid black; */
+  /* outline: none; */
+  width: calc(100%);
+  height: 75px;
+  /* margin-left: -30px; */
+  border-radius: unset;
+  -webkit-border-radius: unset;
+  -moz-border-radius: unset;
+  -ms-border-radius: unset;
+  -o-border-radius: unset;
+  /* box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.4); */
+  font-size: 25px;
+}
+
+.form-control {
+  border: none !important;
+}
+
+/* transition: width 0.5s ease-in-out;
+-webkit-transition: width 0.5s ease-in-out;
+-moz-transition: width 0.5s ease-in-out;
+-ms-transition: width 0.5s ease-in-out;
+-o-transition: width 0.5s ease-in-out; */
+
+#back-btn {
+  background-color: black !important;
+  width: 60px;
+  height: 60px;
+  margin-top: 10px;
+  border-radius: 5rem;
+  -webkit-border-radius: 5rem;
+  -moz-border-radius: 5rem;
+  -ms-border-radius: 5rem;
+  -o-border-radius: 5rem;
+}
+
+/* #seach-icon {
+  float: right;
+} */
+
+/* #search-bar {
+  width: 1px;
+  display:inline-block;
+  transition: width 0.4s ease-in-out;
+  -webkit-transition: width 0.4s ease-in-out;
+  -moz-transition: width 0.4s ease-in-out;
+  -ms-transition: width 0.4s ease-in-out;
+  -o-transition: width 0.4s ease-in-out;
+}
+
+#search-bar:after {
+  max-width: 80%;
+} */
+
+/* #search-bar {
+  width: 1px;
+  display:none;
+  transition: width 0.4s ease-in-out;
+  -webkit-transition: width 0.4s ease-in-out;
+  -moz-transition: width 0.4s ease-in-out;
+  -ms-transition: width 0.4s ease-in-out;
+  -o-transition: width 0.4s ease-in-out;
+}
+
+#seach-icon:focus > #search-bar {
+  width: 80%;
+} */
+
+.btn-primary.dropdown-toggle {
+  color: black;
+}
+
+.btn-primary.dropdown-toggle::after {
+  color: black;
+}
+
+.dropdown-item:active {
+  background-color: black !important;
+  color: white !important;
+}
+
+/* ---------------------------------- Footer -------------------------------------------------------- */
+
+#footer {
+  background-color: black;
+  color: white;
+  width: 100%;
+}
+
+.footer-text {
+  color: white;
+  margin-bottom: 15px;
+}
+
+/* ----------------------------------- ItemPage ---------------------------------------------------- */
+
+#specifications-1 {
+  background-color: aliceblue;
+  padding: 10px;
+}
+
+#specifications-2 {
+  background-color: white;
+  padding: 10px;
+}
+
+#customer-reviews {
+  box-shadow: -4px 9px 10px gainsboro;
+  border-radius: 0.3rem;
+  -webkit-border-radius: 0.3rem;
+  -moz-border-radius: 0.3rem;
+  -ms-border-radius: 0.3rem;
+  -o-border-radius: 0.3rem;
+  height: auto;
+  width: auto;
+  padding: 10px;
+}
+
+#review-block {
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 0.3rem;
+  -webkit-border-radius: 0.3rem;
+  -moz-border-radius: 0.3rem;
+  -ms-border-radius: 0.3rem;
+  -o-border-radius: 0.3rem;
+  width: 30vw;
+  word-wrap: break-word;
+}
+
+
+#itemPics {
+  width: 20px!important;
+  height: 25px!important;
+}
+
+#counter {
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.count {
+  border: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+.card {
+  border-top: none !important;
+  border-right: none !important;
+  border-left: none !important;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.125) !important;
+}
+
+#wish-button {
+  cursor: pointer;
+  background-color: white;
+  border: none;
+  box-shadow: none;
+  outline: none;
+}
+
+.counter-button {
+  background-color: white !important;
+  border: 1px solid rgba(0,0,0,0.125);
+}
+
+.counter-button:focus {
+  box-shadow: none;
+  outline: none;
+}
+
+#item-pic {
+  height: 400px;
+}
+
+
+@media (max-width: 768px) {
+  
+  #item-pic {
+    height: 250px;
+    padding: 10px;
+  }
+
+  .cartBtn {
+    margin-top: 40px;
+  }
+
+  #item-pic-cart {
+    height: 120px !important;
+  }
+}
+
+#size-btn {
+  background-color: white;
+  color: black;
+  margin-right: 10px;
+  border: 1px solid black !important;
+}
+
+/* ------------------------------------------ Cart Page ------------------------------------------------ */
+
+#item-pic-cart {
+  height: 200px;
+}
+
+
+.table td, .table th {
+  vertical-align: middle !important;
+  border: none !important;
+}
+
+#cart-form {
+  background-color: whitesmoke;
+  padding: 15px;
+}
+
+.cartBtn {
+  width: 100%;
+  border-radius: 0px !important;
+  -webkit-border-radius: 0px !important;
+  -moz-border-radius: 0px !important;
+  -ms-border-radius: 0px !important;
+  -o-border-radius: 0px !important;
+  background-color: black !important;
+  box-shadow: none !important;
+  height: 50px;
+}
+
+.cartFormInputs {
+  border: 1px solid grey !important;
+  border-radius: 0px !important;
+  -webkit-border-radius: 0px !important;
+  -moz-border-radius: 0px !important;
+  -ms-border-radius: 0px !important;
+  -o-border-radius: 0px !important;
+  height: 50px !important;
+  background-color: white;
+}
+
+.cartFormInputs:focus {
+  box-shadow: none !important;
+  outline: none !important;
+}
+
+#coupon-block {
+  border-bottom: 1px solid grey;
+}
+
+
+/* ------------------------------------------ Main Page ----------------------------------- */
+
+/* .carousel-indicators li {
+  width: 20px !important;
+  height: 20px !important;
+  border-radius: 10rem;
+  -webkit-border-radius: 10rem;
+  -moz-border-radius: 10rem;
+  -ms-border-radius: 10rem;
+  -o-border-radius: 10rem;
+} */
+
+
+.card {
+  border: none !important;
+  border-radius: 0px !important;
+  -webkit-border-radius: 0px !important;
+  -moz-border-radius: 0px !important;
+  -ms-border-radius: 0px !important;
+  -o-border-radius: 0px !important;
+}
+
+.card-img {
+  height: 100%;
+  border-radius: 0px !important;
+  -webkit-border-radius: 0px !important;
+  -moz-border-radius: 0px !important;
+  -ms-border-radius: 0px !important;
+  -o-border-radius: 0px !important;
+}
+
+.up {
+  position: fixed;
+  bottom: 20px;
+  right: -45px;
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  font-size: 15px;
+  padding: 8px;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  cursor: pointer;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+  z-index: 1;
+}
+
+.up.show {
+  right: 15px;
+}
+
+
+/* -------------------------------- Sign Up Page ------------------------------------------------ */
+
+.signupBtns {
+  border-radius: 0px !important;
+  -webkit-border-radius: 0px !important;
+  -moz-border-radius: 0px !important;
+  -ms-border-radius: 0px !important;
+  -o-border-radius: 0px !important;
+  background-color: white !important;
+  border: none !important;
+  color: gray !important;
+  font-size: 20px !important;
+  box-shadow: none !important;
+}
+
+.signupBtns:focus {
+  color: black !important;
+  border-bottom: 2px solid black !important;
+}
+
+/* .signupBtns.active {
+  color: black !important;
+  border-bottom: 2px solid black !important;
+} */
+
+.formInput {
+  border-radius: 0px !important;
+  -webkit-border-radius: 0px !important;
+  -moz-border-radius: 0px !important;
+  -ms-border-radius: 0px !important;
+  -o-border-radius: 0px !important;
+  box-shadow: none !important;
+  border-bottom: 1px solid grey !important;
+  margin-top: -10px;
+}
+
+.signup-submit-btn {
+  border: none !important;
+  border-radius: 0px !important;
+  -webkit-border-radius: 0px !important;
+  -moz-border-radius: 0px !important;
+  -ms-border-radius: 0px !important;
+  -o-border-radius: 0px !important;
+  width: 100%;
+  height: 70px;
+  font-size: 20px !important;
+  background-color: black !important;
+  color: white !important;
+  box-shadow: none !important;
+}
+
+
+
+/* ----------------------------------- Checkout Page -------------------------------------------- */
+
+.paymentBtn {
+  background-color: white !important;
+  color: black !important;
+  border-radius: 0px !important;
+  -webkit-border-radius: 0px !important;
+  -moz-border-radius: 0px !important;
+  -ms-border-radius: 0px !important;
+  -o-border-radius: 0px !important;
+  border: 2px solid grey !important;
+  width: 20rem;
+  box-shadow: none !important;
+}
+
+.checkout-form {
+  border-radius: 0px !important;
+  -webkit-border-radius: 0px !important;
+  -moz-border-radius: 0px !important;
+  -ms-border-radius: 0px !important;
+  -o-border-radius: 0px !important;
+  box-shadow: none !important;
+  border: 1px solid black !important;
+  height: 3rem !important;
+}
+
+.placeorderBtn {
+  width: 100%;
+  background-color: black !important;
+  color: white;
+  border-radius: 0px !important;
+  -webkit-border-radius: 0px !important;
+  -moz-border-radius: 0px !important;
+  -ms-border-radius: 0px !important;
+  -o-border-radius: 0px !important;
+  border: none !important;
+  height: 8vh;
+  letter-spacing: 3px;
+}
+
+
+/* -------------------------------------- SubCategory Page ------------------------------------------------ */
+
+#filtered-item {
+  width: 15rem;
+  height: 400px;
+  display: inline-block;
+  margin-right: 35px;
+  margin-bottom: 70px;
+  /* box-shadow: 0px 0px 10px grey; */
+  color: black;
+  border: none !important;
+  border-radius: 0px !important;
+  -webkit-border-radius: 0px !important;
+  -moz-border-radius: 0px !important;
+  -ms-border-radius: 0px !important;
+  -o-border-radius: 0px !important;
+}
+
+
+/* ---------------------------------------- Profile Page -------------------------------------------- */
+
+.profileBox {
+  box-shadow: 0px 0px 8px grey;
+  height: 250px;
+}
+
+.profileHeader {
+  height: 50px;
+  background-color: rgb(223, 222, 222);
+  padding-top: 9px;
+  padding-left: 15px;
+}
+
+.profileForm {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-top: 20px;
+}
+
+.profileBtn {
+  float: right;
+  /* background-color: white !important;
+  color: black !important; */
+  border: 1px solid grey !important;
+  height: 50px;
+  width: 150px;
+  letter-spacing: 5px;
+  margin-top: 20px;
+  margin-right: 20px;
+  font-size: 18px !important;
+}
+
+
+/* ------------------------------------------- Admin Page ---------------------------------------- */
+
+/* #side-bar {
+  background-color: black !important;
+  color: white !important;
+  height: 850px !important;
+  left: 0;
+  bottom: 0 !important;
+}
+
+.navItem {
+  background-color: yellowgreen !important;
+  height: 80px;
+  margin-right: -15px;
+  width: calc(100% + 15px);
+  padding-top: 13px;
+  font-size: 25px;
+  letter-spacing: 3px;
+  border-bottom: 1px solid white;
+}
+
+.navItem:active {
+  background-color: white !important;
+  color: black;
+} */
+
+
+.adminMinBlock {
+  background-color: black;
+  color: white;
+  width: 100%;
+  padding: 150px;
+  font-size: 40px;
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+  letter-spacing: 5px;
+  cursor: pointer;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+/* ------------------------------------- AdminUsers Page -------------------------------------------- */
+
+.adminTable {
+  background-color: white;
+  color: black !important;
+  border: none !important;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  box-shadow: 0px 0px 10px grey;
+}
+
+.tableRow {
+  border-bottom: 1px solid black;
+}
+
+.tableRow:hover {
+  background-color: #323232 !important;
+  color: white !important;
+}
+
+/* ------------------------------------------- AdminProducts Page ------------------------------------------ */
+
+#add-item-btn {
+  float: left;
+  background-color: black;
+  color: white;
+  border: none !important;
+  width: 150px;
+  height: 50px;
+  font-size: 20px;
+  letter-spacing: 2px;
+  margin-bottom: 30px;
+  margin-left: 30px;
+  box-shadow: none !important;
+}
+
+#table-image {
+  height: 150px;
+}
+
+.formInputSelect {
+  box-shadow: none !important;
+  border: 1px solid grey !important;
+  color: black !important;
+}
+
+.itemFormSubmitBtn {
+  float: right;
+  background-color: black !important;
+  color: white;
+  border: none !important;
+  margin-right: 10px;
+}
+
+/* select option:hover {
+  margin: 40px;
+  background: rgba(0, 0, 0, 0.3) !important;
+  color: #fff !important;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
+} */
+
+.selectOption {
+  padding: 10px;
+}
+
+.selectOption:hover {
+  background-color: black !important;
+  color: white !important;
+}
+
+.selectOption:checked {
+  background-color: black !important;
+  color: white !important;
+}
